@@ -62,6 +62,7 @@ void retrieve_command(const StatusBlock *block, char *output) {
     }
   }
   strcpy(output, temp_status);
+  pclose(command_file);
 }
 
 void retrieve_commands(int current_time) {
